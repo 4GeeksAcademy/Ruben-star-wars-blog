@@ -1,0 +1,18 @@
+i.fa-2xl {
+    font-size: 5em;
+    line-height: 1.03125em;
+}
+
+.hero{
+    background-image: url("./assets/img/hero-background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_title{
+    border-bottom: 3px solid greenyellow;
+}
+
+.custom-container{
+    width: 30%;
+}

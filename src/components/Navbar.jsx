@@ -1,19 +1,17 @@
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-export const Navbar = () => {
+export const Navbar = ({ title }) => {
 
 	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
-				</div>
+		<nav className="navbar bg-dark">
+			<div className="container-fluid d-flex justify-content-start">
+				<i className="fa-brands fa-empire fa-2xl text-white ms-2 me-4"></i>
+				<a className="navbar-brand text-white" href="/">{title}</a>
 			</div>
 		</nav>
 	);
 };
+
+Navbar.propTypes = {
+	title: PropTypes.string.isRequired
+}
