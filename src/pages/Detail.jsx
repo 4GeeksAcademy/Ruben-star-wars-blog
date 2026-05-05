@@ -21,10 +21,6 @@ export const Detail = () => {
         getDetails();
     }, [dataType, id])
 
-    useEffect(() => {
-        console.log(details);
-    }, [details]);
-
     if (!details) return <p className="text-white">Cargando...</p>;
 
     const props = details.properties;
