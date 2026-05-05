@@ -1,3 +1,7 @@
+body{
+  background-color: #212529;
+}
+
 i.fa-2xl {
     font-size: 5em;
     line-height: 1.03125em;
@@ -15,4 +19,78 @@ i.fa-2xl {
 
 .custom-container{
     width: 30%;
+}
+
+.carousel-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-item > div {
+  display: flex;
+}
+
+.carousel-item .card {
+  flex: 0 0 20%;
+}
+
+.card {
+  box-shadow: 5px 3px 10px 1px rgba(255,255,255,0.25)
+}
+
+.detail-top {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-panel {
+  background: linear-gradient(
+    135deg,
+    rgba(20, 20, 20, 0.95),
+    rgba(40, 40, 40, 0.9)
+  );
+  border-left: 2px solid rgba(255, 0, 100, 0.4);
+}
+
+.detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.detail-description {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.detail-bottom {
+  background: #111;
+  border-radius: 10px;
+}
+
+.detail-bottom .col {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-bottom .col:last-child {
+  border-right: none;
+}
+
+.detail-bottom h6 {
+  font-size: 0.7rem;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.detail-bottom p {
+  color: #e63946;
+  font-size: 0.9rem;
 }
